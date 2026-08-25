@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | D. Karma Cuts</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-page {
+            padding: 80px 50px;
+            background: var(--pure-white);
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+
+        .contact-title span {
+            border-bottom: 4px solid var(--pure-black);
+            padding-bottom: 5px;
+        }
+
+        .contact-subtext {
+            color: var(--mid-gray);
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: var(--bg-light-gray);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--light-gray);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: var(--dark-gray);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            background: var(--pure-white);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: var(--dark-gray);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--pure-black);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--pure-black);
+            color: #ffffff;
+            padding: 18px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background: var(--mid-gray);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,  0, 0, 0.3);
+        }
+
+        /* --- RIGHT SIDE: INFO & MAP --- */
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .info-card {
+            background: var(--bg-light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--light-gray);
+        }
+
+        .info-card h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--pure-black);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .info-card p {
+            color: var(--mid-gray);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .info-card p strong {
+            color: var(--pure-black);
+        }
+
+        .map-container {
+            flex: 1;
+            min-height: 250px;
+            border-radius: 8px;
+            border: 2px solid var(--pure-black);
+            overflow: hidden;
+            background: var(--light-gray); /* Placeholder color */
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            border: 0;
+            filter: grayscale(100%); /* Makes the map black & white */
+        }
+
+        @media (max-width: 900px) {
+            .contact-page {
+                padding: 60px 20px;
+            }
+            
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            
+            .contact-form, .contact-info {
+                min-width: 100%;
+            }
+            
+            .contact-title {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">✂️ D. <span>KARMA</span> CUTS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="contact.html" class="book-btn">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="contact-page">
+        <h1 class="contact-title">Get In <span>Touch</span></h1>
+        <p class="contact-subtext">
+            Ready for a fresh cut? Fill out the form below or visit us in-store. We look forward to seeing you!
+        </p>
+
+        <div class="contact-wrapper">
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="XYZ" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="XYZ@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="9746493430">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Select a Service</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Choose a service...</option>
+                        <option value="classic">Classic Haircut</option>
+                        <option value="fade">Modern Fade</option>
+                        <option value="shave">Hot Towel Shave</option>
+                        <option value="beard">Beard Grooming</option>
+                        <option value="other">Other / Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us what you're looking for or ask a question..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+
+                <div class="info-card">
+                    <h3>Visit Us</h3>
+                    <p>
+                        <strong>D. Karma Cuts</strong><br>
+                        Nagarjun-07, Hasantar<br>
+                        Kathmandu, Nepal
+                    </p>
+                </div>
+
+                <!-- Hours -->
+                <div class="info-card">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        <strong>Every Day:</strong> 9:00 AM - 7:00 PM<br>
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Reach Us</h3>
+                    <p>
+                        <strong>Phone:</strong> 9746493430<br>
+                        <strong>Email:</strong> <a href="mailto:d.karmacuts@gmail.com" style="color: var(--dark-gray); text-decoration: underline;">d.karmacuts@gmail.com</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- FOOTER (UPDATED TO REAL ADDRESS) -->
+    <footer style="background: var(--pure-black); color: #ffffff; padding: 40px 50px; text-align: center; border-top: 4px solid var(--light-gray);"></footer>>
+        <div class="logo" style="justify-content: center; color: #ffffff; margin-bottom: 15px;"></div>>
+            ✂️ D. <span style="color: var(--light-gray);">KARMA</span> CUTS
+        </div>
+        <p style="color: #999; font-size: 14px; margin-bottom: 10px;">Nagarjun-07, Kathmandu, Hasantar | 9746493430</p>
+        <p style="color: #666; font-size: 12px;">&copy; 2026 D. Karma Cuts. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

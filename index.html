@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>D. Karma Cuts | Premium Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a sample HTML document.</p>
-    </div>  
 
-    <p>Adding new content.</p>
+    <nav>
+        <div class="logo">✂️ D. <span>KARMA</span> CUTS</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#Careers">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#book" class="book-btn">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Sharp Cuts.<br>
+                <span>Premium Service.</span>
+            </h1>
+            <p class="hero-subtext">
+                Experience the art of grooming at D. Karma Cuts. 
+                Where every fade is precise, every shave is relaxing, 
+                and your style is our priority.
+            </p>
+            <div class="hero-buttons">
+                <a href="#book" class="cta-primary">Book an Appointment</a>
+                <a href="#services" class="cta-secondary">View Services</a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1000&auto=format&fit=crop" alt="Professional barber giving a haircut" class="hero-image">
+        </div>
+    </header>
+
+    <section id="services" style="padding: 80px 50px; background: var(--bg-light-gray); text-align: center;">
+        <h2 style="font-family: 'Oswald', sans-serif; font-size: 36px; color: var(--dark-gray); margin-bottom: 15px;">
+            What We <span style="border-bottom: 3px solid var(--pure-black); padding-bottom: 5px;">Offer</span>
+        </h2>
+        <p style="color: var(--mid-gray); margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            From classic cuts to modern fades, we've got the tools and skills to make you look your best.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+          
+            <div style="background: var(--pure-white); padding: 30px; border-radius: 8px; flex: 1; min-width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--light-gray);">
+                <div style="font-size: 40px; margin-bottom: 10px;">💈</div>
+                <h3 style="font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--dark-gray);">Classic Haircut</h3>
+                <p style="color: var(--mid-gray); font-size: 14px; line-height: 1.5; margin-top: 10px;">Precision scissor and clipper work tailored to your face shape.</p>
+            </div>
+
+            <div style="background: var(--pure-white); padding: 30px; border-radius: 8px; flex: 1; min-width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--light-gray);">
+                <div style="font-size: 40px; margin-bottom: 10px;">🪒</div>
+                <h3 style="font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--dark-gray);">Hot Towel Shave</h3>
+                <p style="color: var(--mid-gray); font-size: 14px; line-height: 1.5; margin-top: 10px;">The ultimate luxury. A straight-razor shave with hot towels and premium oils.</p>
+            </div>
+
+            <div style="background: var(--pure-white); padding: 30px; border-radius: 8px; flex: 1; min-width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--light-gray);">
+                <div style="font-size: 40px; margin-bottom: 10px;">🧔</div>
+                <h3 style="font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--dark-gray);">Beard Grooming</h3>
+                <p style="color: var(--mid-gray); font-size: 14px; line-height: 1.5; margin-top: 10px;">Expert shaping, trimming, and conditioning to keep your beard sharp.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--pure-black); color: #ffffff; padding: 40px 50px; text-align: center; border-top: 4px solid var(--light-gray);">
+        <div class="logo" style="justify-content: center; color: #ffffff; margin-bottom: 15px;">
+            ✂️ D. <span style="color: var(--light-gray);">KARMA</span> CUTS
+        </div>
+        <p style="color: #999; font-size: 14px; margin-bottom: 10px;">Nagarjun-07, Kathmandu, Hasantar | 9746493430</p>
+        <p style="color: #666; font-size: 12px;">&copy; 2026 D. Karma Cuts. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
